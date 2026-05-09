@@ -94,14 +94,26 @@ nav .login{
     margin-top: 20px;
     border-radius: 20px;
     border: 1px solid rgb(83, 83, 83);
-    background:#1c1c1c;
+    background:#536e3e;
     color: white;
-    transition: 0.4s ease;
+    /* transition: 0.4s ease; */
+    animation: bounce 2s infinite ease;
 }
-.content button:hover{
-    transform:scale(105%);
+@keyframes bounce {
+    0%{
+        transform:scale(102%);
+        background:#536e3e;
+    }
+    20%{
+        transform:scale(104%);
+        background:#536e3e;
+    }
+    100%{
+        transform:scale(100%);
+        /* background: #7a8f6a; */
+    }
+}
 
-}
 .trust{
         width: 33%;
         height: 50px;
@@ -272,6 +284,18 @@ nav .login{
     .content ul li:hover{
         background: #abce887d;
     }
+    #logout{
+        margin-top: 36px;
+    }
+    #logout .icon{
+        background: rgba(235, 119, 99, 0.404);
+    }
+    #logout a{
+        color: rgba(255, 86, 57, 0.993);
+    }
+    #logout:hover{
+        background: rgba(235, 119, 99, 0.404);
+    }
     .content ul li{
         height: 48px;
         background:#f9f9f6;
@@ -328,9 +352,12 @@ nav .login{
     .profile .img{
         width: 80px;
         height: 80px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         border-radius: 50%;
         margin-right: 18px;
+        background: url(assets/profile.png);
+        background-position: center;
+        background-size: cover;
     }
     .details{
         display: flex;

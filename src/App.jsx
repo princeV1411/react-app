@@ -4,8 +4,10 @@ import HeroSection from './components/HeroSection'
 import PrimaryButton from './components/PrimaryButton'
 import CircleAvatar from './components/CircleAvatar'
 import Cards from './components/Cards'
-import './App.css'
 import SideMenu from './components/SideMenu'
+
+import Profile from "./pages/Profile"
+import './App.css'
 
 function App() {
   const data =[
